@@ -150,7 +150,10 @@ li {
     text-align: center;
     left: 0;
 }
-
+.fr{
+    height: 100px;
+    position: relative;
+}
 .noshade {
     width: 30px;
     position: relative;
