@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="drupalgci">
+    <meta name="author" content="Neeraj Pandey">
+    <title>DRUPAL | GCI 16</title>
+    <!-- FONTS HERE -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--  CSS HERE -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="home">
+        <div class="intro">
+            <img src="neer.jpg" class="img1">
+            <h1>Neeraj Pandey</h1>
+            <hr class="noshade">
+            <br>
+            <ul class="ul1">
+                <li>January 04, 2017</li>
+                <li>Open-Source Development</li>
+                <li>#google #drupal</li>
+            </ul>
+            <!-- 
+            <div class="arrow bounce"></div> -->
+            <ul class="list-inline ">
+                <li>
+                    <a href="https://facebook.com/neerajpandey99"> <i class="fa fa-facebook fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/neerajp99"> <i class="fa fa-twitter fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/neerajp99"> <i class="fa fa-linkedin fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://github.com/neerajp99"> <i class="fa fa-github fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="mailto:neerajp1999@gmail.com"> <i class="fa fa-envelope fa-2x"> </i> </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right" id="right">
+            <div class="hello">
+                <h> DRUPAL LADDER - TEST PATCHES</h>
+                <img src="main.png" class="res">
+                <br>
+                <br>
+                <h2 class="text1">DRUPAL LADDER</h2>
+                <br>
+                <p class="refrain">
+                    The Drupal Ladder contains lessons and materials to help people learn about and contribute to Drupal. The site was created by the <a href="https://groups.drupal.org/node/180809">Boston Initiative</a> to help Drupal user groups develop and share and develop materials for learn sprints and issue sprints.
+                </p>
+                <br>
+                <br>
+                <h2 class="text1">TEST PATCHES</h2>
+                <br>
+                <br>
+                <h5>- PREREQUISITES</h5>
+                <p class="refrain">
+                    ~ <a href="https://www.drupal.org/project/1388780/git-instructions">Drupal8 Sandbox Project</a> Installed and running.
+                    <br>
+                    <br> ~ Git Installed
+                    <br>
+                    <br> ~ Basic Git Knowledge
+                </p>
+                <br>
+                <br>
+                <br>
+                <h5>- STEPS</h5>
+                <p class="refrain">
+                    1. Go to the <a href="https://www.drupal.org/node/1388832#comment-5948668">Issue Page</a>.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img1.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    2. Download the <a href="">patch</a> and save it to the root directory of the Sandbox Project.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img2.png" class="res">
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    3. Go to the site and give a look to the issue.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img6.png" class="res">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    4. Check the branch on which you are using the following command:
+                    <br>
+                    <code class="lololo">git branch</code>
+                </p>
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    5. Using Command line move into the Drupal8 Sandbox Project root directory.
+                    <br> eg:
+                    <code>
+          $ cd path/to/drupal_8_sandbox_for_drupal_ladder  
+    </code>
+                </p>
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    6. Apply the patch using the command:
+                    <br>
+                    <code class="lololo">git apply 1326088-rewrite-desription-for-url-alias.patch</code>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img3.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    7. To check whether the patch worked or not, check the status of the repository using the following command
+                    <br>
+                    <code class="lololo">$ git status</code>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img4.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    8. If it shows the core/modules/path/path.module file is modified than the patch has been applied successfully.
+                </p>
+                <br>
+                <br>
+                <p class="refrain">
+                    9. Now go back to the site and check whether the issue has been resolved.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="img5.png" class="res">
+                <br>
+                <br>
+                <p class="refrain"> 10. Once done with testing, the changes can be undo which are applied by the patch by using the following command:
+                    <br>
+                    <code class="lololo">$ git reset --hard </code>
+                </p>
+                <br>
+                <br>
+                <br>
+               <!--  <h5 class="center">SCREENCAST DEMONSTRATING HOW TO TEST PATCH</h5>
+                <br>
+                <br>
+                <div class="frame">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/fBZf2_tb2FU" frameborder="0" allowfullscreen></iframe>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+
+</html>
